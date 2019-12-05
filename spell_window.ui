@@ -54,7 +54,7 @@
       </property>
       <property name="icon">
        <iconset>
-        <normaloff>summoner_spell_icon/Barrier.png</normaloff>summoner_spell_icon/Barrier.png</iconset>
+        <normaloff>images/Barrier.png</normaloff>images/Barrier.png</iconset>
       </property>
       <property name="iconSize">
        <size>
@@ -83,7 +83,7 @@
       </property>
       <property name="icon">
        <iconset>
-        <normaloff>summoner_spell_icon/Exhaust.png</normaloff>summoner_spell_icon/Exhaust.png</iconset>
+        <normaloff>images/Exhaust.png</normaloff>images/Exhaust.png</iconset>
       </property>
       <property name="iconSize">
        <size>
@@ -112,7 +112,7 @@
       </property>
       <property name="icon">
        <iconset>
-        <normaloff>summoner_spell_icon/Cleanse.png</normaloff>summoner_spell_icon/Cleanse.png</iconset>
+        <normaloff>images/Cleanse.png</normaloff>images/Cleanse.png</iconset>
       </property>
       <property name="iconSize">
        <size>
@@ -141,7 +141,7 @@
       </property>
       <property name="icon">
        <iconset>
-        <normaloff>summoner_spell_icon/Flash.png</normaloff>summoner_spell_icon/Flash.png</iconset>
+        <normaloff>images/Flash.png</normaloff>images/Flash.png</iconset>
       </property>
       <property name="iconSize">
        <size>
@@ -170,7 +170,7 @@
       </property>
       <property name="icon">
        <iconset>
-        <normaloff>summoner_spell_icon/Teleport.png</normaloff>summoner_spell_icon/Teleport.png</iconset>
+        <normaloff>images/Teleport.png</normaloff>images/Teleport.png</iconset>
       </property>
       <property name="iconSize">
        <size>
@@ -199,7 +199,7 @@
       </property>
       <property name="icon">
        <iconset>
-        <normaloff>summoner_spell_icon/Smite.png</normaloff>summoner_spell_icon/Smite.png</iconset>
+        <normaloff>images/Smite.png</normaloff>images/Smite.png</iconset>
       </property>
       <property name="iconSize">
        <size>
@@ -228,7 +228,7 @@
       </property>
       <property name="icon">
        <iconset>
-        <normaloff>summoner_spell_icon/Heal.png</normaloff>summoner_spell_icon/Heal.png</iconset>
+        <normaloff>images/Heal.png</normaloff>images/Heal.png</iconset>
       </property>
       <property name="iconSize">
        <size>
@@ -257,7 +257,7 @@
       </property>
       <property name="icon">
        <iconset>
-        <normaloff>summoner_spell_icon/Ignite.png</normaloff>summoner_spell_icon/Ignite.png</iconset>
+        <normaloff>images/Ignite.png</normaloff>images/Ignite.png</iconset>
       </property>
       <property name="iconSize">
        <size>
@@ -286,7 +286,7 @@
       </property>
       <property name="icon">
        <iconset>
-        <normaloff>summoner_spell_icon/Ghost.png</normaloff>summoner_spell_icon/Ghost.png</iconset>
+        <normaloff>images/Ghost.png</normaloff>images/Ghost.png</iconset>
       </property>
       <property name="iconSize">
        <size>
