@@ -151,7 +151,7 @@
        </property>
        <property name="icon">
         <iconset>
-         <normaloff>summoner_spell_icon/Teleport.png</normaloff>summoner_spell_icon/Teleport.png</iconset>
+         <normaloff>images/Teleport.png</normaloff>images/Teleport.png</iconset>
        </property>
        <property name="iconSize">
         <size>
@@ -198,7 +198,7 @@
        </property>
        <property name="icon">
         <iconset>
-         <normaloff>summoner_spell_icon/Flash.png</normaloff>summoner_spell_icon/Flash.png</iconset>
+         <normaloff>images/Flash.png</normaloff>images/Flash.png</iconset>
        </property>
        <property name="iconSize">
         <size>
@@ -1198,7 +1198,7 @@
        </property>
        <property name="icon">
         <iconset>
-         <normaloff>summoner_spell_icon/Smite.png</normaloff>summoner_spell_icon/Smite.png</iconset>
+         <normaloff>images/Smite.png</normaloff>images/Smite.png</iconset>
        </property>
        <property name="iconSize">
         <size>
@@ -1245,7 +1245,7 @@
        </property>
        <property name="icon">
         <iconset>
-         <normaloff>summoner_spell_icon/Flash.png</normaloff>summoner_spell_icon/Flash.png</iconset>
+         <normaloff>images/Flash.png</normaloff>images/Flash.png</iconset>
        </property>
        <property name="iconSize">
         <size>
@@ -1298,7 +1298,7 @@
        </property>
        <property name="icon">
         <iconset>
-         <normaloff>summoner_spell_icon/Ignite.png</normaloff>summoner_spell_icon/Ignite.png</iconset>
+         <normaloff>images/Ignite.png</normaloff>images/Ignite.png</iconset>
        </property>
        <property name="iconSize">
         <size>
@@ -1345,7 +1345,7 @@
        </property>
        <property name="icon">
         <iconset>
-         <normaloff>summoner_spell_icon/Flash.png</normaloff>summoner_spell_icon/Flash.png</iconset>
+         <normaloff>images/Flash.png</normaloff>images/Flash.png</iconset>
        </property>
        <property name="iconSize">
         <size>
@@ -1398,7 +1398,7 @@
        </property>
        <property name="icon">
         <iconset>
-         <normaloff>summoner_spell_icon/Heal.png</normaloff>summoner_spell_icon/Heal.png</iconset>
+         <normaloff>images/Heal.png</normaloff>images/Heal.png</iconset>
        </property>
        <property name="iconSize">
         <size>
@@ -1445,7 +1445,7 @@
        </property>
        <property name="icon">
         <iconset>
-         <normaloff>summoner_spell_icon/Flash.png</normaloff>summoner_spell_icon/Flash.png</iconset>
+         <normaloff>images/Flash.png</normaloff>images/Flash.png</iconset>
        </property>
        <property name="iconSize">
         <size>
@@ -1498,7 +1498,7 @@
        </property>
        <property name="icon">
         <iconset>
-         <normaloff>summoner_spell_icon/Exhaust.png</normaloff>summoner_spell_icon/Exhaust.png</iconset>
+         <normaloff>images/Exhaust.png</normaloff>images/Exhaust.png</iconset>
        </property>
        <property name="iconSize">
         <size>
@@ -1545,7 +1545,7 @@
        </property>
        <property name="icon">
         <iconset>
-         <normaloff>summoner_spell_icon/Flash.png</normaloff>summoner_spell_icon/Flash.png</iconset>
+         <normaloff>images/Flash.png</normaloff>images/Flash.png</iconset>
        </property>
        <property name="iconSize">
         <size>
@@ -1621,6 +1621,19 @@
      <enum>QFrame::Raised</enum>
     </property>
    </widget>
+   <widget class="QPushButton" name="chat_button">
+    <property name="geometry">
+     <rect>
+      <x>92</x>
+      <y>0</y>
+      <width>191</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Chat Times</string>
+    </property>
+   </widget>
    <zorder>frame_2</zorder>
    <zorder>frame_3</zorder>
    <zorder>frame_4</zorder>
@@ -1645,6 +1658,7 @@
    <zorder>verticalLayoutWidget_18</zorder>
    <zorder>verticalLayoutWidget_19</zorder>
    <zorder>verticalLayoutWidget_20</zorder>
+   <zorder>chat_button</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
