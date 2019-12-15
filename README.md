@@ -1,8 +1,6 @@
 
 # wish-for-macOS
 ![sample](https://github.com/macoJ-J/wish-for-macOS/blob/master/sample.jpg)  
-
-summoner spell timer for macOS  
   
 LoLのゲームクライアントはmacOSでは、チャット欄でコピーしたりペーストしたりができないですが、  
 このツールでは簡単にサモナースペルの管理、報告をすることができます。  
@@ -15,6 +13,13 @@ You should not violate the terms, but **please use the chat macro function at yo
 [[7/23/19 OUTDATED] 3rd Party Applications/Modifications - What's allowed, and what isn't](https://boards.na.leagueoflegends.com/en/c/player-behavior-moderation/5dmkJinG-3rd-party-applicationsmodifications-whats-allowed-and-what-isnt)
 
 > Text macros are fine (don't go overboard and spam), but if you're going to macro a series of spells together, that's not.  
+
+# Download
+
+[Releases](https://github.com/macoJ-J/wish-for-macos/releases)で、appをダウンロードすることができます。  
+You can download the app in [Releases](https://github.com/macoJ-J/wish-for-macos/releases).  
+  
+Please contact us if you want a windows version.
 
 # License  
  
