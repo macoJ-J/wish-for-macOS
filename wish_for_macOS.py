@@ -199,21 +199,31 @@ class LeagueTimer(QMainWindow):
 		self.check_thread()
 		text = ""
 		role = ["top","jg","mid","ad","sup"]
-		
+		have_added_role = False
+		#偶数で、一つ前のindexのときにロール宣言をしていなかったら、ロール宣言をする。
 		for index,aa in enumerate(self.a,1):
-			if index % 2 == 0:
-				role.pop(0)
-
+			#タイムカウント中のスペルで、
 			if not aa == None:
+				#奇数なら
 				if not index % 2 == 0:
 					text += role[0] + " "
-					
+					have_added_role = True
+				#偶数で　まだロール宣言をしていなかったら
+				elif not have_added_role:
+					text += role[0] + " "
+			
 				text += str(aa.summoner_spell)
 				text += str(aa.second) + "s" + " "
+			#偶数なら
+			if index % 2 == 0:
+				have_added_role = False
+				role.pop(0)
 		
 		text = text.replace("SummonerSpell.","")
 		text = text.lower()
 		text = text.replace("teleport","tp")
+		text = text.replace("flash","f")
+
 		chat.chat(text)
 	
 	def check_thread(self):
