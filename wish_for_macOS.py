@@ -1,4 +1,5 @@
 import sys
+from PySide2 import QtXml
 from PySide2.QtUiTools import QUiLoader
 from PySide2.QtWidgets import *
 from PySide2.QtCore import *
@@ -7,15 +8,14 @@ from PySide2 import QtCore
 import enum
 import time
 import functools
-import datetime
 import chat
 
 class SummonerSpell(enum.IntEnum):
-	BARRIER = 180
-	CLEANSE = 210
+	BARRIER = 181
+	CLEANSE = 211
 	EXHAUST = 210
 	FLASH = 300
-	GHOST = 180
+	GHOST = 179
 	HEAL = 240
 	IGNITE = 180
 	SMITE = 60
@@ -157,7 +157,7 @@ class LeagueTimer(QMainWindow):
 		thread = SummonerSpellThread(sum_label,spell)
 		if not self.a[index] == None:
 			self.a[index].stop()
-			del(self.a[index])
+			self.a[index] = None
 		self.a[index] = thread
 
 		thread.print_thread.connect(functools.partial(self.update_text,label=sum_label))

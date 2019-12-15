@@ -66,7 +66,7 @@
         </size>
        </property>
        <property name="text">
-        <string>4:21</string>
+        <string>0:00</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
@@ -321,7 +321,7 @@
          </size>
         </property>
         <property name="text">
-         <string>4:21</string>
+         <string>0:00</string>
         </property>
         <property name="alignment">
          <set>Qt::AlignCenter</set>
@@ -651,7 +651,7 @@
         </size>
        </property>
        <property name="text">
-        <string>4:21</string>
+        <string>0:00</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
@@ -717,7 +717,7 @@
         </size>
        </property>
        <property name="text">
-        <string>4:21</string>
+        <string>0:00</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
@@ -783,7 +783,7 @@
         </size>
        </property>
        <property name="text">
-        <string>4:21</string>
+        <string>0:00</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
@@ -849,7 +849,7 @@
         </size>
        </property>
        <property name="text">
-        <string>4:21</string>
+        <string>0:00</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
@@ -915,7 +915,7 @@
         </size>
        </property>
        <property name="text">
-        <string>4:21</string>
+        <string>0:00</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
@@ -981,7 +981,7 @@
         </size>
        </property>
        <property name="text">
-        <string>4:21</string>
+        <string>0:00</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
@@ -1047,7 +1047,7 @@
         </size>
        </property>
        <property name="text">
-        <string>4:21</string>
+        <string>0:00</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
@@ -1113,7 +1113,7 @@
         </size>
        </property>
        <property name="text">
-        <string>4:21</string>
+        <string>0:00</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
