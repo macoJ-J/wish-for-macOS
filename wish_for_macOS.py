@@ -2,6 +2,7 @@ import sys
 from PySide2 import QtXml
 from PySide2.QtUiTools import QUiLoader
 from PySide2.QtWidgets import *
+from PySide2 import QtWidgets
 from PySide2.QtCore import *
 from PySide2.QtGui import *
 from PySide2 import QtCore
@@ -9,6 +10,8 @@ import enum
 import time
 import functools
 import chat
+from league_timer import Ui_main_window
+from spell_window import Ui_Form
 
 class SummonerSpell(enum.IntEnum):
 	BARRIER = 181
@@ -64,9 +67,13 @@ class SummonerSpellThread(QThread,QObject):
 class SpellWindow(QWidget):
 	def __init__(self,parent=None):
 		super(SpellWindow,self).__init__(parent)
-		self.w = QUiLoader().load("spell_window.ui")
+		#self.w = QUiLoader().load("spell_window.ui")
+		self.w = Ui_Form()
+		self.w.setupUi(self)
+		#self.w.retranslateUi(self)
 		#最前面に表示されるように。
-		self.w.setWindowFlags(QtCore.Qt.WindowStaysOnTopHint)
+		#self.w.setWindowFlags(QtCore.Qt.WindowStaysOnTopHint)
+		
 		
 		spell_button_list = [self.w.toolButton_1,self.w.toolButton_2,self.w.toolButton_3,self.w.toolButton_4,self.w.toolButton_5,self.w.toolButton_6,self.w.toolButton_7,self.w.toolButton_8,self.w.toolButton_9]
 		#なぜかint型にしないと正常にzipされない	1214なぜかint型じゃなくても正常にじpされる				
@@ -77,25 +84,29 @@ class SpellWindow(QWidget):
 			button.clicked.connect(functools.partial(self.update_spell_button,selected_spell=spell,spell_button=button))
 		
 	def open(self,index,button):
-		self.w.show()
+		self.show()
 		self.index = index
 		self.last_button = button
 		
 	def update_spell_button(self,selected_spell,spell_button):
 		#.icon x
 		self.last_button.setIcon(spell_button.icon())
-		timer.zipped_list[self.index][3] = selected_spell
+		main.zipped_list[self.index][3] = selected_spell
 
-		timer.setting_spell_button()
-		self.w.close()		
+		main.setting_spell_button()
+		self.close()		
 	
 class LeagueTimer(QMainWindow):
 		
 	def __init__(self,parent=None):
-		super(LeagueTimer,self).__init__(parent)		
+		super(LeagueTimer,self).__init__()		
 		
-		self.ui = QUiLoader().load("league_timer.ui")
-		self.setCentralWidget(self.ui)
+		#self.ui = QUiLoader().load("league_timer.ui")
+		self.ui = Ui_main_window()
+		
+		self.ui.setupUi(self)
+		self.ui.retranslateUi(self)
+		#self.setCentralWidget(self.ui)
 		
 		self.a = [None] * 10
 		
@@ -118,8 +129,9 @@ class LeagueTimer(QMainWindow):
 		self.summoner_spell_button_list = [self.ui.summonerspell01,self.ui.summonerspell02,self.ui.summonerspell03,self.ui.summonerspell04,self.ui.summonerspell05,self.ui.summonerspell06,self.ui.summonerspell07,self.ui.summonerspell08,self.ui.summonerspell09,self.ui.summonerspell10]
 
 		###サモナースペルを適応する
-		for index,spell_button in enumerate(self.summoner_spell_button_list):
-			spell_button.clicked.connect(functools.partial(self.change_summonerspell,index=index,button=spell_button))
+		for index,button in enumerate(self.summoner_spell_button_list):
+			button.clicked.connect(functools.partial(self.change_summonerspell,index=index,button=button))
+			
 		self.setting_spell_button()
 		###
 		
@@ -148,6 +160,7 @@ class LeagueTimer(QMainWindow):
 	'''
 	def change_summonerspell(self,index,button):
 		#ここで自分のqwidgeを送る。送った先で画像を変更する。
+		#spell.show()
 		spell.open(index,button)
 				
 	'''
@@ -212,7 +225,7 @@ if __name__ == "__main__":
 	
 	QtCore.QCoreApplication.setAttribute(QtCore.Qt.AA_ShareOpenGLContexts)
 	app = QApplication(sys.argv)
-	timer = LeagueTimer()
+	main = LeagueTimer()
 	spell = SpellWindow()
-	timer.show()
+	main.show()
 	sys.exit(app.exec_())
