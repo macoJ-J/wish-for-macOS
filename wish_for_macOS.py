@@ -214,7 +214,7 @@ class LeagueTimer(QMainWindow):
 		'''スレッドが生きているかを確認する。
 		'''
 		for index,a in enumerate(self.thread_list):
-			if not a is None and not a.isRunning():
+			if not a is None and not a.isRunning:
 					self.thread_list[index] = None
 					
 if __name__ == "__main__":
