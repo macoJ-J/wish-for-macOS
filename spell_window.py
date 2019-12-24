@@ -105,7 +105,7 @@ class Ui_Form(object):
         self.toolButton_5.setMinimumSize(QtCore.QSize(60, 60))
         self.toolButton_5.setMaximumSize(QtCore.QSize(50, 50))
         icon8 = QtGui.QIcon()
-        icon8.addPixmap(QtGui.QPixmap(self.resource_path("Exhaust.png")), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon8.addPixmap(QtGui.QPixmap(self.resource_path("Ghost.png")), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.toolButton_5.setIcon(icon8)
         self.toolButton_5.setIconSize(QtCore.QSize(50, 50))
         self.toolButton_5.setObjectName("toolButton_5")
